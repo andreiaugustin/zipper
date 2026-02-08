@@ -1,0 +1,12 @@
+{
+    "name": "zipper",
+    "description": "A simple module for zipping and unzipping files through oProcess",
+    "version": "0.1.0",
+    "compatibility": "12.*",
+    "platform": "all",
+    "libraries": [
+        "zipper"
+    ],
+    "xcomps": [],
+    "dependencies": []
+}
