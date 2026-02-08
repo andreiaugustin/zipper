@@ -1,0 +1,23 @@
+
+Switch sys(6)
+	
+	Case 'N'
+		Begin text block
+		Line:powershell.exe Expand-Archive
+		Line: -Path "[pSource]"
+		Line: -DestinationPath "[pDestination]"
+		End text block
+		Get text block argument
+		Calculate argument as replaceall(argument,con(kCr,kLf),'')
+		
+	Case 'X','U'
+		Begin text block
+		Line:unzip "[pSource]" -d "[pDestination]"
+		End text block
+		Get text block argument
+		Calculate argument as replaceall(argument,con(kCr,kLf),'')
+		
+End Switch
+
+Do $cinst.$init(argument)
+Do $cinst.$start()

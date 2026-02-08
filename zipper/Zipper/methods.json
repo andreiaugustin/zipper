@@ -1,0 +1,56 @@
+[
+	{
+		"name": "$unzip",
+		"pvardefs": [
+			{
+				"name": "pSource",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"desc": "Filepath to zip archive"
+			},
+			{
+				"name": "pDestination",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"desc": "Filepath to extract the archive to"
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "argument",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	},
+	{
+		"name": "$zip",
+		"pvardefs": [
+			{
+				"name": "pSource",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"desc": "Filepath to input file or folder"
+			},
+			{
+				"name": "pDestination",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"desc": "Filepath to output zip archive"
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "argument",
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			}
+		]
+	}
+]
